@@ -1,3 +1,5 @@
+from decimal import Decimal
+from django.core.validators import MinValueValidator
 from django.db import models
 from django.contrib.auth.models import User
 
@@ -13,7 +15,7 @@ class TravelerProfile(models.Model):
     def __str__(self):
         return f"{self.user.username} ({self.country})"
 
-
+#짐 보관소(사이즈별 가격, 보관소 이름, 위치 등)
 class StorageLocation(models.Model):
     """짐 보관소/락커 정보"""
 
@@ -32,9 +34,25 @@ class StorageLocation(models.Model):
     rating = models.FloatField(default=4.5)
     review_count = models.PositiveIntegerField(default=0)
 
-    price_small_per_day = models.PositiveIntegerField()
-    price_medium_per_day = models.PositiveIntegerField()
-    price_large_per_day = models.PositiveIntegerField()
+    #사이즈별 시간당 금액 계산 함수
+    price_small_per_hour = models.DecimalField(
+        max_digits=6,
+        decimal_places=2,
+        default=Decimal("0.00"),
+        validators=[MinValueValidator(Decimal("0.00"))],
+    )
+    price_medium_per_hour = models.DecimalField(
+        max_digits=6,
+        decimal_places=2,
+        default=Decimal("0.00"),
+        validators=[MinValueValidator(Decimal("0.00"))],
+    )
+    price_large_per_hour = models.DecimalField(
+        max_digits=6,
+        decimal_places=2,
+        default=Decimal("0.00"),
+        validators=[MinValueValidator(Decimal("0.00"))],
+    )
 
     open_time_text = models.CharField(max_length=100, blank=True)
 
