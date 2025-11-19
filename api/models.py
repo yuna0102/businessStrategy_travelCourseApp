@@ -1,0 +1,118 @@
+from django.db import models
+from django.contrib.auth.models import User
+
+
+class TravelerProfile(models.Model):
+    """앱 사용자 기본 프로필 (국가, 나이 등)"""
+
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
+    country = models.CharField(max_length=100)
+    age = models.PositiveSmallIntegerField(null=True, blank=True)
+    preferred_language = models.CharField(max_length=10, default="en")
+
+    def __str__(self):
+        return f"{self.user.username} ({self.country})"
+
+
+class StorageLocation(models.Model):
+    """짐 보관소/락커 정보"""
+
+    STORAGE_TYPE_CHOICES = [
+        ("STATION_LOCKER", "Station Locker"),
+        ("CAFE_STORAGE", "Cafe Storage"),
+        ("PRIVATE_STORAGE", "Private Storage"),
+    ]
+
+    name = models.CharField(max_length=200)
+    type = models.CharField(max_length=20, choices=STORAGE_TYPE_CHOICES)
+    address = models.CharField(max_length=255)
+    latitude = models.FloatField(null=True, blank=True)
+    longitude = models.FloatField(null=True, blank=True)
+
+    rating = models.FloatField(default=4.5)
+    review_count = models.PositiveIntegerField(default=0)
+
+    price_small_per_day = models.PositiveIntegerField()
+    price_medium_per_day = models.PositiveIntegerField()
+    price_large_per_day = models.PositiveIntegerField()
+
+    open_time_text = models.CharField(max_length=100, blank=True)
+
+    distance_from_center_m = models.PositiveIntegerField(null=True, blank=True)
+
+    def __str__(self):
+        return self.name
+
+
+class Course(models.Model):
+    """특정 보관소 기준 자투리 시간 코스"""
+
+    storage = models.ForeignKey(
+        StorageLocation, on_delete=models.CASCADE, related_name="courses"
+    )
+
+    title = models.CharField(max_length=200)
+    summary = models.TextField(blank=True)
+    duration_minutes = models.PositiveIntegerField()
+
+    rating = models.FloatField(default=4.5)
+    rating_count = models.PositiveIntegerField(default=0)
+
+    thumbnail_url = models.URLField(blank=True)
+
+    created_by_name = models.CharField(max_length=100, blank=True)
+    created_by_avatar_url = models.URLField(blank=True)
+
+    tags = models.CharField(max_length=255, blank=True)
+
+    def __str__(self):
+        return f"{self.title} @ {self.storage.name}"
+
+
+class CourseStop(models.Model):
+    """코스 안에 포함된 개별 장소"""
+
+    course = models.ForeignKey(
+        Course, on_delete=models.CASCADE, related_name="stops"
+    )
+    order = models.PositiveIntegerField()
+
+    name = models.CharField(max_length=200)
+    description = models.TextField(blank=True)
+    category = models.CharField(max_length=50, blank=True)
+
+    image_url = models.URLField(blank=True)
+
+    walk_minutes_from_prev = models.PositiveIntegerField(null=True, blank=True)
+    distance_from_prev_m = models.PositiveIntegerField(null=True, blank=True)
+    stay_minutes = models.PositiveIntegerField(null=True, blank=True)
+
+    rating = models.FloatField(null=True, blank=True)
+
+    class Meta:
+        ordering = ["order"]
+
+    def __str__(self):
+        return f"{self.order}. {self.name} ({self.course.title})"
+
+
+class LuggageBooking(models.Model):
+    """추후 확장을 위한 예약 정보"""
+
+    traveler = models.ForeignKey(TravelerProfile, on_delete=models.CASCADE)
+    storage = models.ForeignKey(StorageLocation, on_delete=models.CASCADE)
+
+    date = models.DateField()
+    pickup_time = models.TimeField(null=True, blank=True)
+    dropoff_time = models.TimeField(null=True, blank=True)
+
+    small_count = models.PositiveIntegerField(default=0)
+    medium_count = models.PositiveIntegerField(default=0)
+    large_count = models.PositiveIntegerField(default=0)
+
+    total_price = models.PositiveIntegerField()
+
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return f"{self.traveler} @ {self.storage} ({self.date})"
