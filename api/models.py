@@ -21,12 +21,25 @@ class StorageLocation(models.Model):
 
     STORAGE_TYPE_CHOICES = [
         ("STATION_LOCKER", "Station Locker"),
-        ("CAFE_STORAGE", "Cafe Storage"),
+        ("CAFE_STORAGE", "Local Storage"),
         ("PRIVATE_STORAGE", "Private Storage"),
+    ]
+    
+    DISTRICT_CHOICES = [
+        ("YONGSAN", "Yongsan-gu"),
+        ("JONGNO", "Jongno-gu"),
+        ("MAPO", "Mapo-gu"),
     ]
 
     name = models.CharField(max_length=200)
     type = models.CharField(max_length=20, choices=STORAGE_TYPE_CHOICES)
+    
+    district = models.CharField(
+        max_length=20,
+        choices=DISTRICT_CHOICES,
+        default="JONGNO",  # 지역 기본값 설정
+    )
+    
     address = models.CharField(max_length=255)
     latitude = models.FloatField(null=True, blank=True)
     longitude = models.FloatField(null=True, blank=True)

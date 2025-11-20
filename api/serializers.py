@@ -12,6 +12,7 @@ class StorageLocationSerializer(serializers.ModelSerializer):
             "id",
             "name",
             "type",
+            "district",
             "address",
             "rating",
             "review_count",

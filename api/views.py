@@ -7,14 +7,32 @@ from .serializers import (
 )
 
 
+
 class StorageListAPIView(generics.ListAPIView):
     """
     GET /api/storages/
-    짐 보관소 리스트
+    짐 보관소 리스트 (+ 선택적으로 지역/타입 필터링)
+    예시:/api/storages/?district=MAPO&type=STATION_LOCKER
     """
 
     queryset = StorageLocation.objects.all()
     serializer_class = StorageLocationSerializer
+
+    def get_queryset(self):
+        qs = super().get_queryset()
+
+        # ?district=YONGSAN / JONGNO / MAPO
+        district = self.request.query_params.get("district")
+        # ?type=STATION_LOCKER / PRIVATE_STORAGE / CAFE_STORAGE
+        storage_type = self.request.query_params.get("type")
+
+        if district:
+            qs = qs.filter(district=district)
+
+        if storage_type:
+            qs = qs.filter(type=storage_type)
+
+        return qs
 
 
 class StorageCoursesListAPIView(generics.ListAPIView):
