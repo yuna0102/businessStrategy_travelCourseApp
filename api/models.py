@@ -147,3 +147,38 @@ class LuggageBooking(models.Model):
 
     def __str__(self):
         return f"{self.traveler} @ {self.storage} ({self.date})"
+
+# 코스 추천 프로필 정보   
+class CourseRecommender(models.Model):
+    """코스를 추천한 실제/가상의 여행자 정보"""
+
+    course = models.ForeignKey(
+        Course,
+        on_delete=models.CASCADE,
+        related_name="recommenders",
+    )
+
+    name = models.CharField(max_length=100)
+    avatar_url = models.URLField(blank=True)
+    country_flag_emoji = models.CharField(max_length=8, blank=True)
+
+    visited_text = models.CharField(
+        max_length=255,
+        blank=True,  # ex) "Visited Seoul 3 times in the last 2 years"
+    )
+    bio = models.TextField(
+        blank=True,  # ex) "Backpacker who loves local food markets"
+    )
+
+    routes_count = models.PositiveIntegerField(default=0)
+    cities_count = models.PositiveIntegerField(default=0)
+    followers_count = models.PositiveIntegerField(default=0)
+
+    is_representative = models.BooleanField(
+        default=False,  # 대표 추천자로 쓸지 여부
+    )
+
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return f"{self.name} for {self.course.title}"
