@@ -1,0 +1,1218 @@
+[
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$600000$ztqW3XKv7El3s6ubehqohK$A6BlxfoFEzyk8P5M36ijC8q3mPBgIAxFDOTWZj8zjnE=",
+    "last_login": "2025-12-03T09:26:55.377Z",
+    "is_superuser": true,
+    "username": "dudu",
+    "first_name": "",
+    "last_name": "",
+    "email": "mkiyg@naver.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2025-11-19T08:26:02.975Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "api.storagelocation",
+  "pk": 2,
+  "fields": {
+    "name": "Hongik University Station",
+    "type": "STATION_LOCKER",
+    "district": "MAPO",
+    "address": "160, Yanghwa-ro, Mapo-gu, Seoul (Line 2, Inside Station)",
+    "latitude": null,
+    "longitude": null,
+    "rating": 4.5,
+    "review_count": 332,
+    "price_small_per_hour": "2.80",
+    "price_medium_per_hour": "3.50",
+    "price_large_per_hour": "4.02",
+    "open_time_text": "5:00 AM - 00:00 AM",
+    "distance_from_center_m": 20
+  }
+},
+{
+  "model": "api.storagelocation",
+  "pk": 3,
+  "fields": {
+    "name": "Nota",
+    "type": "PRIVATE_STORAGE",
+    "district": "JONGNO",
+    "address": "29, Donhawmun-ro 11-gil, Jongno-gu, Seoul",
+    "latitude": null,
+    "longitude": null,
+    "rating": 2.5,
+    "review_count": 30,
+    "price_small_per_hour": "1.30",
+    "price_medium_per_hour": "2.60",
+    "price_large_per_hour": "4.00",
+    "open_time_text": "24h",
+    "distance_from_center_m": null
+  }
+},
+{
+  "model": "api.storagelocation",
+  "pk": 4,
+  "fields": {
+    "name": "Seoul Museum of Craft Art",
+    "type": "CAFE_STORAGE",
+    "district": "JONGNO",
+    "address": "4, Yulgok-ro 3-gil,  Jongno-gu, Seoul",
+    "latitude": null,
+    "longitude": null,
+    "rating": 4.8,
+    "review_count": 80,
+    "price_small_per_hour": "3.60",
+    "price_medium_per_hour": "4.70",
+    "price_large_per_hour": "6.80",
+    "open_time_text": "11:00 AM - 20:00 PM",
+    "distance_from_center_m": 20
+  }
+},
+{
+  "model": "api.storagelocation",
+  "pk": 5,
+  "fields": {
+    "name": "T-Luggage",
+    "type": "PRIVATE_STORAGE",
+    "district": "JONGNO",
+    "address": "129, Jong-ro, Jongno-gu, Seoul(Line 5, near Exit 6/Transfer passageway)",
+    "latitude": null,
+    "longitude": null,
+    "rating": 3.9,
+    "review_count": 26,
+    "price_small_per_hour": "2.10",
+    "price_medium_per_hour": "3.60",
+    "price_large_per_hour": "5.70",
+    "open_time_text": "9:00 AM - 22:00 PM",
+    "distance_from_center_m": 350
+  }
+},
+{
+  "model": "api.storagelocation",
+  "pk": 6,
+  "fields": {
+    "name": "Anguk Station Locker",
+    "type": "STATION_LOCKER",
+    "district": "JONGNO",
+    "address": "328, Yulgok-ro, Jongno-gu, Seoul(Line 3)",
+    "latitude": null,
+    "longitude": null,
+    "rating": 4.4,
+    "review_count": 80,
+    "price_small_per_hour": "1.60",
+    "price_medium_per_hour": "2.40",
+    "price_large_per_hour": "3.10",
+    "open_time_text": "5:00 AM - 00:00 AM",
+    "distance_from_center_m": null
+  }
+},
+{
+  "model": "api.storagelocation",
+  "pk": 7,
+  "fields": {
+    "name": "Yongsan Station KTX Storage",
+    "type": "STATION_LOCKER",
+    "district": "YONGSAN",
+    "address": "55 Hangang- daero 23-gil, Yongsan-gu, Seoul",
+    "latitude": null,
+    "longitude": null,
+    "rating": 3.8,
+    "review_count": 0,
+    "price_small_per_hour": "0.70",
+    "price_medium_per_hour": "1.00",
+    "price_large_per_hour": "1.40",
+    "open_time_text": "5:00 AM - 00:00 AM",
+    "distance_from_center_m": 280
+  }
+},
+{
+  "model": "api.storagelocation",
+  "pk": 8,
+  "fields": {
+    "name": "Seoul Station KTX Storage",
+    "type": "STATION_LOCKER",
+    "district": "YONGSAN",
+    "address": "405, Hangang -daero, Yongsan-gu, Seoul",
+    "latitude": null,
+    "longitude": null,
+    "rating": 4.2,
+    "review_count": 90,
+    "price_small_per_hour": "0.70",
+    "price_medium_per_hour": "1.00",
+    "price_large_per_hour": "2.80",
+    "open_time_text": "5:00 AM - 00:00 AM",
+    "distance_from_center_m": 780
+  }
+},
+{
+  "model": "api.storagelocation",
+  "pk": 9,
+  "fields": {
+    "name": "The Hyusig NuveR, Itaewon Branch",
+    "type": "CAFE_STORAGE",
+    "district": "YONGSAN",
+    "address": "11, Woosadang-ro 14-gil, Yongsan-gu, Seoul",
+    "latitude": null,
+    "longitude": null,
+    "rating": 2.9,
+    "review_count": 60,
+    "price_small_per_hour": "3.60",
+    "price_medium_per_hour": "4.70",
+    "price_large_per_hour": "6.80",
+    "open_time_text": "24h",
+    "distance_from_center_m": 650
+  }
+},
+{
+  "model": "api.storagelocation",
+  "pk": 10,
+  "fields": {
+    "name": "Gongdeok  Station T-Luggage",
+    "type": "STATION_LOCKER",
+    "district": "MAPO",
+    "address": "25, Mapo -daero, Mapo-gu, Seoul(Line 5/6/Air, Near Exit 1)",
+    "latitude": null,
+    "longitude": null,
+    "rating": 4.5,
+    "review_count": 23,
+    "price_small_per_hour": "2.10",
+    "price_medium_per_hour": "3.60",
+    "price_large_per_hour": "5.70",
+    "open_time_text": "9:00 AM - 22:00 PM",
+    "distance_from_center_m": 48
+  }
+},
+{
+  "model": "api.storagelocation",
+  "pk": 11,
+  "fields": {
+    "name": "Mangwon  Station Locker",
+    "type": "STATION_LOCKER",
+    "district": "MAPO",
+    "address": "80, World  Cup-ro, Mapo-gu, Seoul (Line 6, Inside Station)",
+    "latitude": null,
+    "longitude": null,
+    "rating": 4.5,
+    "review_count": 26,
+    "price_small_per_hour": "1.60",
+    "price_medium_per_hour": "2.40",
+    "price_large_per_hour": "3.10",
+    "open_time_text": "5:00 AM - 00:00 AM",
+    "distance_from_center_m": 600
+  }
+},
+{
+  "model": "api.course",
+  "pk": 3,
+  "fields": {
+    "storage": 3,
+    "title": "Insadong Food Tour",
+    "summary": "A short 30-minute snack course in Ikseon-dong, hopping between a famous hotteok stall and two cozy cafés for a sweet, easy last stop to end your day.",
+    "duration_minutes": 30,
+    "rating": 4.3,
+    "rating_count": 88,
+    "thumbnail_url": "https://a.travel-assets.com/findyours-php/viewfinder/images/res70/249000/249996-Insadong.jpg",
+    "created_by_name": "Heren",
+    "created_by_avatar_url": "",
+    "tags": "Food"
+  }
+},
+{
+  "model": "api.course",
+  "pk": 4,
+  "fields": {
+    "storage": 4,
+    "title": "Anguk Bakery Bites",
+    "summary": "A 30-minute bakery-hopping course around Anguk, visiting a famous croissant spot, iconic American-style donuts, and a modern tea house—perfect for a quick, sweet break all within a few minutes’ walk.",
+    "duration_minutes": 30,
+    "rating": 4.4,
+    "rating_count": 70,
+    "thumbnail_url": "https://namdi.co.kr/wp-content/uploads/2023/12/%ED%8A%B9%EC%84%B1%EC%95%84%ED%8B%B0%EC%8A%A4%ED%8A%B8%EB%B2%A0%EC%9D%B4%EC%BB%A4%EB%A6%AC1-1024x576.jpeg",
+    "created_by_name": "James",
+    "created_by_avatar_url": "",
+    "tags": "Food"
+  }
+},
+{
+  "model": "api.course",
+  "pk": 5,
+  "fields": {
+    "storage": 4,
+    "title": "Hanok Cafe Vibes",
+    "summary": "A 1-hour hanok café stroll in Anguk, starting with coffee and pastries at the iconic Cafe Onion Anguk and moving to Dotori Garden for rich Greek yogurt, all enjoyed in beautifully restored traditional Korean houses.",
+    "duration_minutes": 60,
+    "rating": 4.5,
+    "rating_count": 38,
+    "thumbnail_url": "https://img1.daumcdn.net/thumb/R1280x0.fjpg/?fname=http://t1.daumcdn.net/brunch/service/user/aKRc/image/cA_bV0PSnqPB2yhs_uHPtgLyVEM.jpg",
+    "created_by_name": "Amanda",
+    "created_by_avatar_url": "",
+    "tags": "Food"
+  }
+},
+{
+  "model": "api.course",
+  "pk": 6,
+  "fields": {
+    "storage": 4,
+    "title": "Michelin Noodle & Dumpling",
+    "summary": "A 2-hour foodie course featuring Michelin Bib Gourmand noodles and dumplings at Hwangsaengga Kalguksu, followed by specialty coffee and dessert at Blue Bottle Samcheong just a minute away.",
+    "duration_minutes": 120,
+    "rating": 3.6,
+    "rating_count": 20,
+    "thumbnail_url": "https://cdn.visitkorea.or.kr/img/call?cmd=VIEW&id=8fd310bc-ec9e-494c-904a-b3f854f14238",
+    "created_by_name": "Heren",
+    "created_by_avatar_url": "",
+    "tags": "Food"
+  }
+},
+{
+  "model": "api.course",
+  "pk": 7,
+  "fields": {
+    "storage": 4,
+    "title": "History & Greenery",
+    "summary": "A short walking course right next to the museum, combining calm greenery at Songhyeon Green Plaza with a peek at the historic Yun Posun House exterior and a serene stroll along the stone wall road of Gamgodang-gil.",
+    "duration_minutes": 30,
+    "rating": 4.5,
+    "rating_count": 180,
+    "thumbnail_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2PgW02qtrkWcf-tdJZSdLSxXwgaR37sUOVg&s",
+    "created_by_name": "James",
+    "created_by_avatar_url": "",
+    "tags": "Traditional"
+  }
+},
+{
+  "model": "api.course",
+  "pk": 8,
+  "fields": {
+    "storage": 4,
+    "title": "Royal Palace Walk",
+    "summary": "A 1-hour royal palace walk that follows the iconic stone walls from the National Folk Museum by Gyeongbokgung’s east gate to the tranquil Hyangwonjeong Pavilion inside the palace grounds.\r\n\r\nA 2-hour Bukchon deep dive through traditional hanok alleyways and historic architecture, centered around a scenic photo spot in Bukchon Hanok Village.",
+    "duration_minutes": 60,
+    "rating": 3.8,
+    "rating_count": 64,
+    "thumbnail_url": "https://www.nfm.go.kr/kids/images/user/eng/outdoor1.jpg",
+    "created_by_name": "Sam",
+    "created_by_avatar_url": "",
+    "tags": "Traditional"
+  }
+},
+{
+  "model": "api.course",
+  "pk": 9,
+  "fields": {
+    "storage": 4,
+    "title": "Bukchon Deep Dive",
+    "summary": "Traditional village & historical architecture.",
+    "duration_minutes": 120,
+    "rating": 3.3,
+    "rating_count": 77,
+    "thumbnail_url": "https://media.triple.guide/triple-cms/c_limit,f_auto,h_1024,w_1024/62a8d636-234e-4903-b4fb-5dd079c7bee3.jpeg",
+    "created_by_name": "Kim",
+    "created_by_avatar_url": "",
+    "tags": "Traditional"
+  }
+},
+{
+  "model": "api.course",
+  "pk": 10,
+  "fields": {
+    "storage": 4,
+    "title": "Trendy Props & Scent",
+    "summary": "Quick shopping for popular Korean design items.",
+    "duration_minutes": 30,
+    "rating": 3.8,
+    "rating_count": 120,
+    "thumbnail_url": "https://mblogthumb-phinf.pstatic.net/MjAyNDEwMjdfMTgx/MDAxNzMwMDMxNjkwMDM2.rquQ9_TctNgOrEnRq5uo1eO4Dg7ba9nDaxvrRphIAVEg.aKiSC9ZgXnRNWDNY7fYWvbUP7KU91A8XIZEmVzorYl0g.JPEG/IMG_5130.JPG?type=w800",
+    "created_by_name": "",
+    "created_by_avatar_url": "",
+    "tags": "K-Culture"
+  }
+},
+{
+  "model": "api.course",
+  "pk": 11,
+  "fields": {
+    "storage": 4,
+    "title": "K-Beauty & Fashion",
+    "summary": "Flagship stores of global K-brands nearby.",
+    "duration_minutes": 60,
+    "rating": 4.4,
+    "rating_count": 30,
+    "thumbnail_url": "https://pimg.mk.co.kr/news/cms/202507/03/20250703_01110307000002_L00.jpg",
+    "created_by_name": "Sue",
+    "created_by_avatar_url": "",
+    "tags": "K-Culture"
+  }
+},
+{
+  "model": "api.course",
+  "pk": 12,
+  "fields": {
+    "storage": 4,
+    "title": "Insadong Souvenirs",
+    "summary": "Full cultural shopping experience in Insadong.",
+    "duration_minutes": 120,
+    "rating": 4.5,
+    "rating_count": 64,
+    "thumbnail_url": "https://www.seoulcitytourbus.co.kr/upload/image/station/23/%ED%88%AC%EC%96%B4%EC%BD%94%EC%8A%A4_%EC%A0%84%ED%86%B5%EB%AC%B8%ED%99%94_13_%EC%9D%B8%EC%82%AC%EB%8F%99(1196x520)_600x384.jpg",
+    "created_by_name": "Tommy",
+    "created_by_avatar_url": "",
+    "tags": "K-Culture"
+  }
+},
+{
+  "model": "api.course",
+  "pk": 13,
+  "fields": {
+    "storage": 7,
+    "title": "I-Park Mall Sweet Bites",
+    "summary": "Popular dessert spots inside the station mall for a quick energy boost.",
+    "duration_minutes": 30,
+    "rating": 4.5,
+    "rating_count": 80,
+    "thumbnail_url": "https://newsimg.sedaily.com/2023/05/15/29PL6STPTH_5.jpg",
+    "created_by_name": "",
+    "created_by_avatar_url": "",
+    "tags": "Food"
+  }
+},
+{
+  "model": "api.course",
+  "pk": 14,
+  "fields": {
+    "storage": 7,
+    "title": "Yongnidan-gil Cafe Tour",
+    "summary": "Visit the hottest cafes in Seoul's trendy Yongnidan-gil area.",
+    "duration_minutes": 60,
+    "rating": 3.8,
+    "rating_count": 20,
+    "thumbnail_url": "https://tnnews.co.kr/wp-content/uploads/2025/09/%EC%9A%A9%EB%A6%AC%EB%8B%A8%EA%B8%B80.jpg",
+    "created_by_name": "",
+    "created_by_avatar_url": "",
+    "tags": "Food"
+  }
+},
+{
+  "model": "api.course",
+  "pk": 15,
+  "fields": {
+    "storage": 7,
+    "title": "Local Gourmet & Mood",
+    "summary": "A famous local spicy chicken dish followed by a quiet cafe.",
+    "duration_minutes": 120,
+    "rating": 3.3,
+    "rating_count": 60,
+    "thumbnail_url": "https://mediahub.seoul.go.kr/uploads/mediahub/2023/11/MQwrDcXYTOPqNfXcwzqrLkQazunhiSlz.png",
+    "created_by_name": "",
+    "created_by_avatar_url": "",
+    "tags": ""
+  }
+},
+{
+  "model": "api.course",
+  "pk": 16,
+  "fields": {
+    "storage": 7,
+    "title": "Museum Garden Walk",
+    "summary": "A quick breath of fresh air at the representative museum garden.",
+    "duration_minutes": 30,
+    "rating": 4.5,
+    "rating_count": 20,
+    "thumbnail_url": "https://www.much.go.kr/resource/cooperation/img/introimg_yhm.jpg",
+    "created_by_name": "",
+    "created_by_avatar_url": "",
+    "tags": "Traditional"
+  }
+},
+{
+  "model": "api.course",
+  "pk": 17,
+  "fields": {
+    "storage": 7,
+    "title": "Korean History Highlights",
+    "summary": "Korean History Highlights",
+    "duration_minutes": 60,
+    "rating": 4.4,
+    "rating_count": 20,
+    "thumbnail_url": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/29/d6/d4/30/late-night-opening-until.jpg?w=1200&h=-1&s=1",
+    "created_by_name": "",
+    "created_by_avatar_url": "",
+    "tags": "Traditional"
+  }
+},
+{
+  "model": "api.course",
+  "pk": 18,
+  "fields": {
+    "storage": 7,
+    "title": "War Memorial Journey",
+    "summary": "Walking through Korea's modern history and outdoor exhibitions.",
+    "duration_minutes": 120,
+    "rating": 2.8,
+    "rating_count": 68,
+    "thumbnail_url": "https://www.much.go.kr/resource/cooperation/img/introimg_war.jpg",
+    "created_by_name": "",
+    "created_by_avatar_url": "",
+    "tags": "Traditional"
+  }
+},
+{
+  "model": "api.course",
+  "pk": 19,
+  "fields": {
+    "storage": 8,
+    "title": "Station Classic Bakery",
+    "summary": "Historic bakery & snacks inside the station.",
+    "duration_minutes": 30,
+    "rating": 3.6,
+    "rating_count": 28,
+    "thumbnail_url": "https://m.tlj.co.kr/static/images/brand/img_slide_cjcenter_center02.jpg",
+    "created_by_name": "",
+    "created_by_avatar_url": "",
+    "tags": "Food"
+  }
+},
+{
+  "model": "api.course",
+  "pk": 20,
+  "fields": {
+    "storage": 8,
+    "title": "Malli-dong Trendy Vibes",
+    "summary": "Walk along 'Seoullo 7017' to the trendy dining street behind the station.",
+    "duration_minutes": 60,
+    "rating": 3.9,
+    "rating_count": 20,
+    "thumbnail_url": "https://cdn.cnpnews.co.kr/news/photo/202501/4414_7290_355.jpg",
+    "created_by_name": "",
+    "created_by_avatar_url": "",
+    "tags": "Food"
+  }
+},
+{
+  "model": "api.course",
+  "pk": 21,
+  "fields": {
+    "storage": 8,
+    "title": "National Treasure Tour",
+    "summary": "Walk to Korea's No.1 National Treasure via the sky bridge.",
+    "duration_minutes": 60,
+    "rating": 4.5,
+    "rating_count": 100,
+    "thumbnail_url": "https://i.namu.wiki/i/GwPKMfFb9pDHnmRdhEW645blGqzLhDDkttt9HCbM2GftbpzxuWbT0Bv1ZRo66xRiMxPR0S_OmOIaAHNffTAyZQ.webp",
+    "created_by_name": "",
+    "created_by_avatar_url": "",
+    "tags": "Traditional"
+  }
+},
+{
+  "model": "api.course",
+  "pk": 22,
+  "fields": {
+    "storage": 8,
+    "title": "Must-Buy Souvenirs",
+    "summary": "The ultimate shopping stop for K-snacks before leaving.",
+    "duration_minutes": 30,
+    "rating": 3.8,
+    "rating_count": 97,
+    "thumbnail_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTp5rj8yZJlSvayN_MNBPGkDj9M8ILEHVMxRw&s",
+    "created_by_name": "",
+    "created_by_avatar_url": "",
+    "tags": "Food"
+  }
+},
+{
+  "model": "api.course",
+  "pk": 23,
+  "fields": {
+    "storage": 8,
+    "title": "K-Drama Filming Spots",
+    "summary": "Visit the nostalgic neighborhood seen in many K-Dramas (Huam-dong).",
+    "duration_minutes": 120,
+    "rating": 4.3,
+    "rating_count": 60,
+    "thumbnail_url": "https://mblogthumb-phinf.pstatic.net/MjAyNDAxMTFfMjM4/MDAxNzA0OTM0ODYyNTkz.YmAbA2-Va7Hf3tpt2paMi7kDht6E1NsNCSg073UBbh0g.oiVcV6Dm39s22y0kyojiz-t995oBt2U24momSCJ8b1Ig.JPEG.storydaejeon/5-1_%EC%B2%9C%EB%",
+    "created_by_name": "",
+    "created_by_avatar_url": "",
+    "tags": "K-Culture"
+  }
+},
+{
+  "model": "api.course",
+  "pk": 24,
+  "fields": {
+    "storage": 9,
+    "title": "Usadan Local Vibe",
+    "summary": "Enjoy the unique hilltop atmosphere right next to the hotel.",
+    "duration_minutes": 30,
+    "rating": 4.5,
+    "rating_count": 33,
+    "thumbnail_url": "https://english.visitseoul.net/comm/getImage?srvcId=POST&parentSn=11168&fileTy=POSTTHUMB&fileNo=1",
+    "created_by_name": "",
+    "created_by_avatar_url": "",
+    "tags": "Food"
+  }
+},
+{
+  "model": "api.course",
+  "pk": 25,
+  "fields": {
+    "storage": 9,
+    "title": "Antique Street Walk",
+    "summary": "A walk through history filled with vintage items.",
+    "duration_minutes": 60,
+    "rating": 3.8,
+    "rating_count": 28,
+    "thumbnail_url": "https://koreatourinformation.com/wp-content/uploads/2014/05/insadong-1.jpg",
+    "created_by_name": "",
+    "created_by_avatar_url": "",
+    "tags": "Traditional"
+  }
+},
+{
+  "model": "api.course",
+  "pk": 26,
+  "fields": {
+    "storage": 9,
+    "title": "High-End K-Lifestyle",
+    "summary": "Deep dive into K-perfume and designer brands in Hannam.",
+    "duration_minutes": 30,
+    "rating": 3.8,
+    "rating_count": 28,
+    "thumbnail_url": "https://img1.daumcdn.net/thumb/R1280x0.fjpg/?fname=http://t1.daumcdn.net/brunch/service/user/AI7/image/16jq6tt1vYKM7-H5y9NRU4BofQ4.jpg",
+    "created_by_name": "",
+    "created_by_avatar_url": "",
+    "tags": "K-Culture"
+  }
+},
+{
+  "model": "api.coursestop",
+  "pk": 3,
+  "fields": {
+    "course": 4,
+    "order": 1,
+    "name": "Salt24 (Artisan Croissant)",
+    "description": "Artisan bakery known for expertly crafted croissants, shio-pan, and other European-style breads",
+    "category": "Cafe",
+    "image_url": "https://cdn.skkuw.com/news/photo/202308/30274_20205_236.jpg",
+    "walk_minutes_from_prev": 5,
+    "distance_from_prev_m": 500,
+    "stay_minutes": 5,
+    "rating": 4.0
+  }
+},
+{
+  "model": "api.coursestop",
+  "pk": 4,
+  "fields": {
+    "course": 4,
+    "order": 2,
+    "name": "Randy's Donuts Anguk",
+    "description": "California-born donut brand with a giant donut sign, serving a wide range of classic and creative donuts near Anguk Station.",
+    "category": "Cafe",
+    "image_url": "https://mblogthumb-phinf.pstatic.net/MjAyMjAxMzBfNTIg/MDAxNjQzNTI3MTg2MTU4.y-0jG3e_nfMUS5o6kJfXf5fw6rNgZ2BeT7a4aH3qNwMg.aWOEPLKKlMr_jr8zoWYifl_BkpA9VN4qo1o0zaziPPUg.JPEG.soato42/IMG_3578.JPG?type=w800",
+    "walk_minutes_from_prev": 2,
+    "distance_from_prev_m": 300,
+    "stay_minutes": 5,
+    "rating": 3.3
+  }
+},
+{
+  "model": "api.coursestop",
+  "pk": 5,
+  "fields": {
+    "course": 4,
+    "order": 3,
+    "name": "Amore Pacific O'sulloc Tea House",
+    "description": "Flagship O’sulloc tea house in Bukchon, set in a remodeled 1960s home, offering premium Korean green teas, matcha desserts, and views over hanok rooftops",
+    "category": "Cafe",
+    "image_url": "https://www.apgroup.com/int/ko/resource/images/misc/news/2024-09/content/img090401.jpg",
+    "walk_minutes_from_prev": 5,
+    "distance_from_prev_m": 400,
+    "stay_minutes": 10,
+    "rating": 4.5
+  }
+},
+{
+  "model": "api.coursestop",
+  "pk": 6,
+  "fields": {
+    "course": 5,
+    "order": 1,
+    "name": "Cafe Onion Anguk",
+    "description": "A spacious hanok-style café near Anguk Station, famous for its courtyard setting and display of breads, cakes, and specialty coffee.",
+    "category": "Cafe",
+    "image_url": "https://mblogthumb-phinf.pstatic.net/MjAyMzAxMjJfNzgg/MDAxNjc0Mzg1MDUwODE3.zVHwUZSF-SXAq8bN3cENYHJRZ-yexdLpK8LtNSTU9Kwg.SVf0Yxfijmn1nRPVkpvcuvOH0JQsrxhAbya6elhm7OIg.JPEG.hyeonj0504/IMG_6250.jpg?type=w",
+    "walk_minutes_from_prev": 2,
+    "distance_from_prev_m": 800,
+    "stay_minutes": 30,
+    "rating": 4.5
+  }
+},
+{
+  "model": "api.coursestop",
+  "pk": 7,
+  "fields": {
+    "course": 5,
+    "order": 2,
+    "name": "Dotori Garden (Greek Yogurt)",
+    "description": "Greek-yogurt–specialty café in a cozy hanok alley, known for thick yogurt bowls and Ghibli-inspired, garden-like interiors.",
+    "category": "Restaurant",
+    "image_url": "https://mblogthumb-phinf.pstatic.net/MjAyNDA0MTVfMTQ3/MDAxNzEzMTg2NDUyODE1.-TyByvW46lHRy5bRwDf34g8Yw-cLKTzp-wITo1Bo_cwg.eW-2k4lMGylgYU8varWMVihoEr0cWwR3yjfk3_hMwrUg.JPEG/1713185732261.jpg?type=w800",
+    "walk_minutes_from_prev": 5,
+    "distance_from_prev_m": 450,
+    "stay_minutes": 20,
+    "rating": 3.8
+  }
+},
+{
+  "model": "api.coursestop",
+  "pk": 8,
+  "fields": {
+    "course": 6,
+    "order": 1,
+    "name": "Hwangsaengga Kalguksu",
+    "description": "Michelin Bib Gourmand noodle house serving handmade kalguksu and dumplings near Bukchon and Gyeongbokgung.",
+    "category": "Restaurant",
+    "image_url": "https://axwwgrkdco.cloudimg.io/v7/__gmpics3__/0b2eb29954e841eb9ff8637e7da3782f.jpg?width=1000",
+    "walk_minutes_from_prev": 3,
+    "distance_from_prev_m": 240,
+    "stay_minutes": 50,
+    "rating": 4.5
+  }
+},
+{
+  "model": "api.coursestop",
+  "pk": 9,
+  "fields": {
+    "course": 6,
+    "order": 2,
+    "name": "Blue Bottle Coffee Samcheong",
+    "description": "Three-story Blue Bottle café between Gyeongbokgung and the MMCA, combining minimalist design with views over historic Samcheong.",
+    "category": "Cafe",
+    "image_url": "https://mblogthumb-phinf.pstatic.net/MjAyMDEwMDZfMTMx/MDAxNjAxOTgyMTExNDI3.R4IYhFvM1syvdlo90D8MvLcEF3oF8vECQ7dlOezTiYEg.zKmHI3oeKEYeNiDRicrrtBCTmbVzihGVpO17xxNQdAcg.JPEG.charla1005/IMG_3085.JPG?type=w",
+    "walk_minutes_from_prev": 12,
+    "distance_from_prev_m": 800,
+    "stay_minutes": 40,
+    "rating": 4.0
+  }
+},
+{
+  "model": "api.coursestop",
+  "pk": 10,
+  "fields": {
+    "course": 7,
+    "order": 1,
+    "name": "Open Songhyeon Green Plaza",
+    "description": "A large open green plaza between Gyeongbokgung and Jongno, used as a free public park and art/architecture exhibition space",
+    "category": "Place",
+    "image_url": "https://english.seoul.go.kr/wp-content/uploads/2023/10/biennale-06.jpg",
+    "walk_minutes_from_prev": 3,
+    "distance_from_prev_m": 500,
+    "stay_minutes": 10,
+    "rating": 4.5
+  }
+},
+{
+  "model": "api.coursestop",
+  "pk": 11,
+  "fields": {
+    "course": 7,
+    "order": 2,
+    "name": "Yun Posun House (Exterior)",
+    "description": "Historic hanok residence of former President Yun Posun, representing Korea’s modern political history amid tranquil gardens (viewed mainly from the outside street).",
+    "category": "Place",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNHujW3gfwWo4HKLmrNI5CJHvznlHTNB-NNA&s",
+    "walk_minutes_from_prev": 3,
+    "distance_from_prev_m": 500,
+    "stay_minutes": 30,
+    "rating": 3.8
+  }
+},
+{
+  "model": "api.coursestop",
+  "pk": 12,
+  "fields": {
+    "course": 7,
+    "order": 3,
+    "name": "Gamgodang-gil (Stone Wall Road)",
+    "description": "Narrow stone-wall street leading up from Anguk toward Bukchon, lined with trees, galleries, and photo spots featured in multiple K-dramas",
+    "category": "Place",
+    "image_url": "https://www.dplusguide.com/wp-content/uploads/2018/06/%E0%B8%96%E0%B8%99%E0%B8%99%E0%B8%81%E0%B8%B1%E0%B8%A1%E0%B9%82%E0%B8%81%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%81%E0%B8%B4%E0%B8%A5-Gamgodang-gil.jpg",
+    "walk_minutes_from_prev": 8,
+    "distance_from_prev_m": 800,
+    "stay_minutes": 40,
+    "rating": 3.7
+  }
+},
+{
+  "model": "api.coursestop",
+  "pk": 13,
+  "fields": {
+    "course": 8,
+    "order": 1,
+    "name": "National Folk Museum (Gyeongbokgung East Gate)",
+    "description": "Folk museum inside the Gyeongbokgung grounds that showcases artifacts and life scenes from traditional Korean daily culture.",
+    "category": "Place",
+    "image_url": "https://s39023.pcdn.co/wp-content/uploads/2023/08/National-Folk-Museum-of-Korea.jpg.optimal.jpg",
+    "walk_minutes_from_prev": 20,
+    "distance_from_prev_m": 850,
+    "stay_minutes": 30,
+    "rating": 3.8
+  }
+},
+{
+  "model": "api.coursestop",
+  "pk": 14,
+  "fields": {
+    "course": 8,
+    "order": 2,
+    "name": "Hyangwonjeong Pavilion (Inside Palace)",
+    "description": "A two-story hexagonal pavilion on an island in the Hyangwonji pond in Gyeongbokgung’s rear garden, known for its picturesque bridge and serene atmosphere.",
+    "category": "Place",
+    "image_url": "https://koreajoongangdaily.joins.com/data/photo/2021/11/05/907cc6e4-3bb5-40c6-b637-ec15e03c3cce.jpg",
+    "walk_minutes_from_prev": 5,
+    "distance_from_prev_m": 800,
+    "stay_minutes": 30,
+    "rating": 3.6
+  }
+},
+{
+  "model": "api.coursestop",
+  "pk": 15,
+  "fields": {
+    "course": 13,
+    "order": 1,
+    "name": "Old Ferry Donut (I-Park Mall)",
+    "description": "Trendy donut shop famous for oversized, cream-filled donuts in playful flavors, now with a convenient branch inside Yongsan I’Park Mall.",
+    "category": "Cafe",
+    "image_url": "https://visitgangnam.net/wp-content/uploads/2024/07/IMG_0146-%EB%B3%B5%EC%82%AC-min-uai-1000x562.jpg",
+    "walk_minutes_from_prev": 4,
+    "distance_from_prev_m": 200,
+    "stay_minutes": 30,
+    "rating": 3.8
+  }
+},
+{
+  "model": "api.coursestop",
+  "pk": 16,
+  "fields": {
+    "course": 13,
+    "order": 2,
+    "name": "Tartine Bakery",
+    "description": "Seoul outpost of the iconic San Francisco bakery, serving sourdough bread, pies, and all-day brunch in a bright corner of I’Park Mall.",
+    "category": "Cafe",
+    "image_url": "https://cdn.enewstoday.co.kr/news/photo/202306/2013664_813707_5641.jpg",
+    "walk_minutes_from_prev": 8,
+    "distance_from_prev_m": 400,
+    "stay_minutes": 20,
+    "rating": 3.3
+  }
+},
+{
+  "model": "api.coursestop",
+  "pk": 17,
+  "fields": {
+    "course": 13,
+    "order": 3,
+    "name": "Shake Shack Yongsan",
+    "description": "Classic Shake Shack location inside the mall for smashed burgers, crinkle-cut fries, and thick shakes between shopping or trains.",
+    "category": "Restaurant",
+    "image_url": "https://mblogthumb-phinf.pstatic.net/MjAyMjEwMjlfNjcg/MDAxNjY3MDA5MjE4NzU2.5VwZci6HKP7NBrxvkqL4D36XILFikSXKIbp3Jjfz3VUg.1abX8ilN4yFJCqQ93axZY19KqQeO37xk14YAw1qtLoAg.JPEG.jinni615/output_1089133194.jpg",
+    "walk_minutes_from_prev": 7,
+    "distance_from_prev_m": 500,
+    "stay_minutes": 20,
+    "rating": 2.9
+  }
+},
+{
+  "model": "api.coursestop",
+  "pk": 18,
+  "fields": {
+    "course": 14,
+    "order": 1,
+    "name": "Teddy Beurre House (Bakery)",
+    "description": "Croissant-focused bakery café with a Parisian teddy-bear theme, known for buttery croissants and creative pastries in a cozy Yongsan side street.",
+    "category": "Cafe",
+    "image_url": "https://mblogthumb-phinf.pstatic.net/MjAyMzA4MjJfMjU3/MDAxNjkyNzA3MjQ4Mjk2.IOQP0uBruzzm3697mqmRkE1MBlEZTtrWWTEMqw_zXhMg._9VA20YhrvOAkfNORZaZ_Loxcsizl57XAtOS-hI8Qe0g.JPEG.mint8864/SE-cc8d1152-b594-45f5",
+    "walk_minutes_from_prev": 8,
+    "distance_from_prev_m": 500,
+    "stay_minutes": 10,
+    "rating": 3.4
+  }
+},
+{
+  "model": "api.coursestop",
+  "pk": 19,
+  "fields": {
+    "course": 14,
+    "order": 2,
+    "name": "Dotori Yongsan (Greek Yogurt)",
+    "description": "Stylish “Ghibli-vibe” café specializing in rich, house-made Greek yogurt bowls topped with fruits, grains, and seasonal toppings.",
+    "category": "Restaurant",
+    "image_url": "https://mblogthumb-phinf.pstatic.net/MjAyNDA0MTVfMTQ3/MDAxNzEzMTg2NDUyODE1.-TyByvW46lHRy5bRwDf34g8Yw-cLKTzp-wITo1Bo_cwg.eW-2k4lMGylgYU8varWMVihoEr0cWwR3yjfk3_hMwrUg.JPEG/1713185732261.jpg?type=w800",
+    "walk_minutes_from_prev": 1,
+    "distance_from_prev_m": 20,
+    "stay_minutes": 15,
+    "rating": 4.3
+  }
+},
+{
+  "model": "api.coursestop",
+  "pk": 20,
+  "fields": {
+    "course": 15,
+    "order": 1,
+    "name": "Ogeuninae Dakgalbi (Michelin)",
+    "description": "Famous Chuncheon-style spicy stir-fried chicken spot, once listed as a Michelin Bib Gourmand, using fresh leg meat for chewy, flavorful dakgalbi.",
+    "category": "Restaurant",
+    "image_url": "https://image.8dogam.com/resized/product/asset/v1/upload/3949a3d58f3b436b87233a3c92396045.jpeg?type=big&res=3x&ext=jpg",
+    "walk_minutes_from_prev": 4,
+    "distance_from_prev_m": 50,
+    "stay_minutes": 40,
+    "rating": 4.4
+  }
+},
+{
+  "model": "api.coursestop",
+  "pk": 21,
+  "fields": {
+    "course": 15,
+    "order": 2,
+    "name": "Travertine Yongsan",
+    "description": "Design-driven specialty coffee shop in a converted house, known for its calm courtyard, carefully roasted beans, and minimalist stone-and-glass interior",
+    "category": "Cafe",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1NG4TUlivHr2NAoRq1gG_FpFZwDqD-H6-tQ&s",
+    "walk_minutes_from_prev": 3,
+    "distance_from_prev_m": 50,
+    "stay_minutes": 30,
+    "rating": 2.3
+  }
+},
+{
+  "model": "api.coursestop",
+  "pk": 22,
+  "fields": {
+    "course": 16,
+    "order": 1,
+    "name": "National Museum of Korea (Mirror Pond)",
+    "description": "Reflecting pond in front of the museum where the building and sky mirror on the water, creating one of Yongsan’s most photogenic views.",
+    "category": "Restaurant",
+    "image_url": "https://mblogthumb-phinf.pstatic.net/MjAyMzAzMTJfMTg5/MDAxNjc4NTkxOTEwOTc2.7aFyQY-GjTQvtemMjvXEAm9-RZ3iH2Sw-Hf3nzMvt74g.eB_-HTVjtpUx09fTxIvlFE9R5Q3PIEgH7akTWxzYEVwg.JPEG.dearpuregirl/SE-3b2850e5-04a2-",
+    "walk_minutes_from_prev": 7,
+    "distance_from_prev_m": 500,
+    "stay_minutes": 30,
+    "rating": 3.5
+  }
+},
+{
+  "model": "api.coursestop",
+  "pk": 23,
+  "fields": {
+    "course": 16,
+    "order": 2,
+    "name": "Dragon Falls (Yongsan Park)",
+    "description": "Small artificial waterfall in Yongsan Family Park, a quiet spot to sit by clear water and greenery just beside the museum garden.",
+    "category": "Place",
+    "image_url": "https://mediahub.seoul.go.kr/uploads/mediahub/2022/06/qwKojtXrxAmgeHPgbqrSjHsuTqsyboTH.jpg",
+    "walk_minutes_from_prev": 5,
+    "distance_from_prev_m": 200,
+    "stay_minutes": 30,
+    "rating": 4.3
+  }
+},
+{
+  "model": "api.coursestop",
+  "pk": 24,
+  "fields": {
+    "course": 16,
+    "order": 3,
+    "name": "Cheongja-jeong Pavilion",
+    "description": "Traditional pavilion set directly over the Mirror Pond, built with celadon-style roof tiles and offering peaceful views across the museum grounds.",
+    "category": "Place",
+    "image_url": "https://imagescdn.gettyimagesbank.com/500/202012/a12127899.jpg",
+    "walk_minutes_from_prev": 3,
+    "distance_from_prev_m": 200,
+    "stay_minutes": 40,
+    "rating": 3.8
+  }
+},
+{
+  "model": "api.coursestop",
+  "pk": 25,
+  "fields": {
+    "course": 19,
+    "order": 1,
+    "name": "Taegukdang (Monaka Ice Cream)",
+    "description": "Historic bakery often called Seoul’s oldest, famous for its retro-style monaka ice cream—crispy wafers filled with rich milk ice cream",
+    "category": "Cafe",
+    "image_url": "https://mblogthumb-phinf.pstatic.net/MjAyMzA5MzBfMjc0/MDAxNjk2MDA0NDE3NTQ2.LtIg1NklIFLGhAepDKeLw6Z04WDgpK79Y21a9kenEosg.1gEYWqtKeqYpBcKEgZmWlzhXKXwuUIvW8_tUq4P3iw0g.JPEG.jennifer34/KakaoTalk_20230930_",
+    "walk_minutes_from_prev": 8,
+    "distance_from_prev_m": 500,
+    "stay_minutes": 10,
+    "rating": 3.2
+  }
+},
+{
+  "model": "api.coursestop",
+  "pk": 26,
+  "fields": {
+    "course": 19,
+    "order": 2,
+    "name": "Egg Drop Seoul Station",
+    "description": "Popular Korean egg-sandwich chain serving fluffy scrambled egg toast with various toppings, perfect for a quick grab-and-go meal at the station.",
+    "category": "Restaurant",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-ATZOPj4k3Gu-0HBp2vfWMVyHXuK33MfGCw&s",
+    "walk_minutes_from_prev": 1,
+    "distance_from_prev_m": 30,
+    "stay_minutes": 15,
+    "rating": 4.1
+  }
+},
+{
+  "model": "api.coursestop",
+  "pk": 27,
+  "fields": {
+    "course": 19,
+    "order": 3,
+    "name": "Brick Sand (Financier)",
+    "description": "Dessert shop specializing in brick-shaped French financier cakes, known for cute aesthetics and a variety of rich, buttery flavors",
+    "category": "Cafe",
+    "image_url": "https://blog.kakaocdn.net/dna/bN311m/btsMzOsbk0h/AAAAAAAAAAAAAAAAAAAAAPKVU4pcgSoZi2cZoXiKaROivB_otwhd4HxbJFl35gMi/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1767193199&allow_ip=&allow",
+    "walk_minutes_from_prev": 5,
+    "distance_from_prev_m": 80,
+    "stay_minutes": 5,
+    "rating": 2.6
+  }
+},
+{
+  "model": "api.coursestop",
+  "pk": 28,
+  "fields": {
+    "course": 20,
+    "order": 1,
+    "name": "Very Street Kitchen",
+    "description": "Trendy casual restaurant near Seoullo 7017 offering street-food-inspired Korean and international dishes in a cozy, stylish setting.",
+    "category": "Restaurant",
+    "image_url": "https://img1.daumcdn.net/thumb/R1280x0.fjpg/?fname=http://t1.daumcdn.net/brunch/service/user/50Fo/image/xTTg1KajewFo8DkhMeTDBQ-iwh4",
+    "walk_minutes_from_prev": 10,
+    "distance_from_prev_m": 600,
+    "stay_minutes": 30,
+    "rating": 3.3
+  }
+},
+{
+  "model": "api.coursestop",
+  "pk": 29,
+  "fields": {
+    "course": 20,
+    "order": 2,
+    "name": "The House 1932 (Bakery Cafe)",
+    "description": "A historic 1932 Japanese-style house turned café near Seoul Station, loved for its warm wooden interior, coffee, and freshly baked breads from its own bakery.",
+    "category": "Cafe",
+    "image_url": "https://www.breaknews.com/imgdata/breaknews_com/202111/2021112654526492.jpg",
+    "walk_minutes_from_prev": 5,
+    "distance_from_prev_m": 200,
+    "stay_minutes": 20,
+    "rating": 4.5
+  }
+},
+{
+  "model": "api.coursestop",
+  "pk": 30,
+  "fields": {
+    "course": 21,
+    "order": 1,
+    "name": "Sungnyemun Gate (Namdaemun)",
+    "description": "Historic southern gate of the old city and Korea’s National Treasure No. 1, standing between Seoul Station and City Hall as a symbol of Seoul.",
+    "category": "Place",
+    "image_url": "https://www.agoda.com/wp-content/uploads/2019/05/Namdaemun-market-Namdaemun-Gate.jpg",
+    "walk_minutes_from_prev": 13,
+    "distance_from_prev_m": 800,
+    "stay_minutes": 10,
+    "rating": 3.2
+  }
+},
+{
+  "model": "api.coursestop",
+  "pk": 31,
+  "fields": {
+    "course": 21,
+    "order": 2,
+    "name": "Namdaemun Market (Gate 1)",
+    "description": "Bustling traditional market entrance leading into thousands of small shops selling clothes, kitchenware, snacks, and street food right next to the gate.",
+    "category": "Place",
+    "image_url": "https://lh4.googleusercontent.com/proxy/OLLRntAyfQqoMOrjJ887FOdx_tQHP_-HkzRLgbAOe9gh_UQPeLuhqFm4ltpM3nHLu_8hD_sZsqONGulvMtYJ7TaFsv7gNuaZ03HmXVvK4JGB2zGrOlNSZ0wWJ99FSFRt7EzWFt97iCgYe6blTfwQV1rR46g15g",
+    "walk_minutes_from_prev": 13,
+    "distance_from_prev_m": 950,
+    "stay_minutes": 20,
+    "rating": 2.9
+  }
+},
+{
+  "model": "api.coursestop",
+  "pk": 32,
+  "fields": {
+    "course": 22,
+    "order": 1,
+    "name": "Lotte Mart Zettaplex (Grocery)",
+    "description": "Huge one-stop supermarket at Seoul Station, popular for stocking up on Korean snacks, ramyun, and souvenirs before heading to the train or airport.",
+    "category": "Place",
+    "image_url": "https://cdn.imweb.me/upload/S202304256fd703c23ba74/84534ae2c9df7.jpg",
+    "walk_minutes_from_prev": 4,
+    "distance_from_prev_m": 350,
+    "stay_minutes": 40,
+    "rating": 1.8
+  }
+},
+{
+  "model": "api.coursestop",
+  "pk": 33,
+  "fields": {
+    "course": 22,
+    "order": 2,
+    "name": "Kakao Friends Station Branch",
+    "description": "Character shop in Seoul Station filled with Kakao Friends plushies, stationery, travel goods, and souvenirs featuring Ryan, Apeach, and friends.",
+    "category": "Place",
+    "image_url": "https://cloudfront-ap-northeast-1.images.arcpublishing.com/chosunbiz/4TLAZUZPLYBVLK67PT7XRWDUDA.jpg",
+    "walk_minutes_from_prev": 700,
+    "distance_from_prev_m": 15,
+    "stay_minutes": 20,
+    "rating": 3.5
+  }
+},
+{
+  "model": "api.coursestop",
+  "pk": 34,
+  "fields": {
+    "course": 22,
+    "order": 3,
+    "name": "Olive Young Seoul Square",
+    "description": "Large Olive Young drugstore in Seoul Square, carrying K-beauty cosmetics, skincare, health products, and travel-sized essentials with tax refund service.",
+    "category": "Place",
+    "image_url": "https://image.oliveyoung.co.kr/cfimages/oystore/DD5E_1.jpg?RS=1024x0&QT=85",
+    "walk_minutes_from_prev": 5,
+    "distance_from_prev_m": 200,
+    "stay_minutes": 15,
+    "rating": 4.2
+  }
+},
+{
+  "model": "api.coursestop",
+  "pk": 35,
+  "fields": {
+    "course": 23,
+    "order": 1,
+    "name": "Huam-dong 108 Stairs (Elevator)",
+    "description": "Steep historic stairway in Huam-dong with 108 steps and a sloped elevator beside it, offering murals and hillside views without a tough climb.",
+    "category": "Place",
+    "image_url": "https://d2m29rwiahucy3.cloudfront.net/images/store/S210118_1611112650741/000.jpg",
+    "walk_minutes_from_prev": 5,
+    "distance_from_prev_m": 20,
+    "stay_minutes": 30,
+    "rating": 3.2
+  }
+},
+{
+  "model": "api.coursestop",
+  "pk": 36,
+  "fields": {
+    "course": 23,
+    "order": 2,
+    "name": "Cafe Comfort (Namsan View)",
+    "description": "Rooftop-style café tucked into the Huam-dong hillside, known for wide Namsan and city views, terrace seating, and a relaxed sunset vibe.",
+    "category": "Cafe",
+    "image_url": "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FsTnL7%2FbtsCr5YV0Cv%2FAAAAAAAAAAAAAAAAAAAAAMeHtRigRwOujyUpEQoioZtyRfBzqgI016t5A50QAstj%2Fimg.jpg%3",
+    "walk_minutes_from_prev": 5,
+    "distance_from_prev_m": 200,
+    "stay_minutes": 10,
+    "rating": 4.4
+  }
+},
+{
+  "model": "api.coursestop",
+  "pk": 37,
+  "fields": {
+    "course": 24,
+    "order": 1,
+    "name": "Champ Coffee (Second Workshop)",
+    "description": "Small industrial-style specialty café near Itaewon, famous for strong espresso drinks like cortados and “Queen’s coffee,” plus house-roasted beans and cookies.",
+    "category": "Cafe",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW_vvZnQ3szzj-668B7J7N5m5bb0SIMBR5jQ&s",
+    "walk_minutes_from_prev": 5,
+    "distance_from_prev_m": 30,
+    "stay_minutes": 5,
+    "rating": 3.8
+  }
+},
+{
+  "model": "api.coursestop",
+  "pk": 38,
+  "fields": {
+    "course": 24,
+    "order": 2,
+    "name": "Kervan Bakery (Turkish Dessert)",
+    "description": "Halal Turkish bakery-café serving baklava, Turkish delight, cookies, and tea—perfect for rich, syrupy desserts and coffee in Itaewon",
+    "category": "Cafe",
+    "image_url": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/61/0e/14/photo1jpg.jpg?w=900&h=500&s=1",
+    "walk_minutes_from_prev": 12,
+    "distance_from_prev_m": 500,
+    "stay_minutes": 7,
+    "rating": 4.3
+  }
+},
+{
+  "model": "api.coursestop",
+  "pk": 39,
+  "fields": {
+    "course": 24,
+    "order": 3,
+    "name": "Halal Guys Itaewon",
+    "description": "Korean outpost of the New York halal chain, known for chicken and gyro over rice, pita sandwiches, and their signature white and hot sauces.",
+    "category": "Restaurant",
+    "image_url": "https://mblogthumb-phinf.pstatic.net/MjAyMjA1MTJfMTMw/MDAxNjUyMzE4MzAwNDg4.cfRxwtTZ5MvOsEVi6ea8Tm_TipOwGU4oDZ2lQ4zuAEsg.5lh05eJ3gsFJUSszu2bwf9oVqzJwD-0F-fGPejKo3uYg.JPEG.rolo_ggo/SE-DB92E4B3-7A71-47E3",
+    "walk_minutes_from_prev": 3,
+    "distance_from_prev_m": 300,
+    "stay_minutes": 10,
+    "rating": 2.9
+  }
+},
+{
+  "model": "api.coursestop",
+  "pk": 40,
+  "fields": {
+    "course": 25,
+    "order": 1,
+    "name": "Itaewon Antique Furniture Street",
+    "description": "A 1 km stretch lined with antique shops selling vintage furniture, décor, and curios from Korea and abroad—great for browsing unique one-off pieces.",
+    "category": "Place",
+    "image_url": "https://www.itaewonantique.com/adm/data/store/61a4882b6d13202.jpg",
+    "walk_minutes_from_prev": 2,
+    "distance_from_prev_m": 30,
+    "stay_minutes": 20,
+    "rating": 1.9
+  }
+},
+{
+  "model": "api.coursestop",
+  "pk": 41,
+  "fields": {
+    "course": 25,
+    "order": 2,
+    "name": "Hamilton Hotel (Landmark)",
+    "description": "Classic Itaewon landmark hotel sitting right by the station, known for its rooftop summer pool and city views, plus easy access to bars and restaurants.",
+    "category": "Place",
+    "image_url": "https://images.trvl-media.com/lodging/12000000/11040000/11030800/11030724/9d7286bf.jpg?impolicy=resizecrop&rw=575&rh=575&ra=fill",
+    "walk_minutes_from_prev": 5,
+    "distance_from_prev_m": 300,
+    "stay_minutes": 20,
+    "rating": 3.2
+  }
+}
+]
